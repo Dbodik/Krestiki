@@ -28,7 +28,7 @@ public class Logic {
             System.out.print("Введите позицию: ");
             Integer position = Integer.valueOf(in.nextLine());
 
-            while (position > 9 || position < 1) {            // не стал парится с проверкой, ибо проверки на другие символы кроме чисел нет, наверно лучше эксепшены отрабатывать. Проверь остальное плз
+            while (position > 9 || position < 1) {                // не стал парится с проверкой, ибо проверки на другие символы кроме чисел нет, наверно лучше эксепшены отрабатывать. Проверь остальное плз
                 Scanner poz = new Scanner(System.in);
                 System.out.println("Ошибка ввода. Введите позицию от 1 до 9");
                 position = Integer.valueOf(in.nextLine());
@@ -54,36 +54,36 @@ public class Logic {
         for (int i : playerMovesList) {
             switch (i) {
                 case 1:
-                    if (playerMovesList.contains(4) & playerMovesList.contains(7)) {
+                    if (playerMovesList.contains(4) && playerMovesList.contains(7)) {
                         System.out.println("Победил игрок " + player);
                         return true;
-                    } else if (playerMovesList.contains(5) & playerMovesList.contains(9)) {
+                    } else if (playerMovesList.contains(5) && playerMovesList.contains(9)) {
                         System.out.println("Победил игрок " + player);
                         return true;
-                    } else if (playerMovesList.contains(2) & playerMovesList.contains(3)) {
+                    } else if (playerMovesList.contains(2) && playerMovesList.contains(3)) {
                         System.out.println("Победил игрок " + player);
                         return true;
                     }
                 case 2:
-                    if (playerMovesList.contains(5) & playerMovesList.contains(8)) {
+                    if (playerMovesList.contains(5) && playerMovesList.contains(8)) {
                         System.out.println("Победил игрок " + player);
                         return true;
                     }
                 case 3:
-                    if (playerMovesList.contains(5) & playerMovesList.contains(7)) {
+                    if (playerMovesList.contains(5) && playerMovesList.contains(7)) {
                         System.out.println("Победил игрок " + player);
                         return true;
-                    } else if (playerMovesList.contains(6) & playerMovesList.contains(9)) {
+                    } else if (playerMovesList.contains(6) && playerMovesList.contains(9)) {
                         System.out.println("Победил игрок " + player);
                         return true;
                     }
                 case 4:
-                    if (playerMovesList.contains(5) & playerMovesList.contains(6)) {
+                    if (playerMovesList.contains(5) && playerMovesList.contains(6)) {
                         System.out.println("Победил игрок " + player);
                         return true;
                     }
                 case 7:
-                    if (playerMovesList.contains(8) & playerMovesList.contains(9)) {
+                    if (playerMovesList.contains(8) && playerMovesList.contains(9)) {
                         System.out.println("Победил игрок " + player);
                         return true;
                     }
